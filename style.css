@@ -242,7 +242,7 @@ section{
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: transparent;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
@@ -256,6 +256,7 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+    background: transparent;
 }
 
 /*Experience section*/
@@ -297,8 +298,8 @@ article .icon {
 }
 /*Projects section*/
 .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    border-color: transparent;
+    background: transparent;
 }
 .project-img {
     border-radius: 2rem;
@@ -357,4 +358,10 @@ footer {
 }
 footer p {
     text-align: center;
+}
+body{
+    background-image: url('./assets/web.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
