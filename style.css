@@ -424,27 +424,31 @@ footer .footer-socials a {
     font-size: 2rem;
     transition: color 0.2s;
 }
-footer .footer-socials a:hover {.section__pic-container {
+footer .footer-socials a:hover {
+    color: #fff;
+}
+
+/* Profile image container (desktop) */
+.section__pic-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
     background: transparent;
-    border-radius: 50%;
-    overflow: hidden;
+    border-radius: 2rem;
+    overflow: hidden; /* ensure inner image follows rounded corners */
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border: 2px solid #000000;
 }
 
+/* Make the inner image cover the container without distortion */
 .section__pic-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #00eaff;
-}
-    color: #fff;
+    border-radius: 0; /* container clipping handles rounding */
 }
 
 /* --- ANIMACIONE & SUGJERIME SHTESE --- */
