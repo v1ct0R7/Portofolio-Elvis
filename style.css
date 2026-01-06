@@ -1,20 +1,20 @@
 body {
     font-family: "Poppins", sans-serif;
-    background-image: url('./assets/trade.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* Soft pastel background (zgjidh nje nga opsionet më poshtë) */
+    /* Opsioni A — cool mint */
+    background: linear-gradient(135deg, oklab(100% 0 -0.00011) 0%, lab(97.58% 0.01 -0.01) 100%);
+    /* Opsioni B — warm peach (komento Opsioni A dhe aktivizo këtë nëse preferon)
+       background: linear-gradient(135deg, #fff7ec 0%, #ffe6d6 100%); */
     position: relative;
-    color: #fff; /* Tekst i bardhë për kontrast maksimal */
+    color: #000000;
 }
 
-/* Efekt overlay më i lehtë për të dukur më shumë fotoja */
+/* Overlay më i lehtë që lejon ngjyrën të dallohet, por mban kontrastin e tekstit */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35); /* Overlay i errët, fotoja duket më shumë */
+    background: rgba(0, 0, 0, 0.12);
     z-index: -1;
     pointer-events: none;
 }
@@ -22,12 +22,12 @@ body::before {
 /* Tekstet kryesore të bardha dhe me hije për lexueshmëri */
 .title,
 h1, h2, h3, h4, h5, h6 {
-    color: #fff;
+    color: #000000;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 p {
-    color: #fff;
+    color: #000000;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
@@ -53,15 +53,15 @@ nav {
     font-size: 1.5rem;
 }
 a {
-    color: #00eaff;
+    color: #000000;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
     text-decoration: none;
 }
 a:hover {
-    color: #fff;
+    color: #000000;
     text-decoration: underline;
     text-underline-offset: 0.2rem;
-    text-decoration-color: #00eaff;
+    text-decoration-color: #030100;
 }
 .logo {
     font-size: 2rem;
@@ -161,8 +161,8 @@ section{
     width: 400px;
     margin: auto 0;
     background: transparent;
-    box-shadow: 0 4px 24px rgba(255, 152, 0, 0.15);
-    border: 2px solid #ffd54f;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    border: 2px solid #000000;
     border-radius: 2rem;
 }
 .section__text {
@@ -178,13 +178,13 @@ section{
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: #f5f5f5; /* Tekst i bardhë për prezantim */
-    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    color: #072704; /* Tekst i bardhë për prezantim */
+    text-shadow: 0 2px 8px rgba(5, 46, 22, 0.18);
 }
 .title {
     font-size: 3rem;
     text-align: center;
-    color: #ffd54f; /* portokalli veror */
+    color: #020202; /* portokalli veror */
     text-shadow: 0 2px 8px rgba(0,0,0,0.25); /* Hije për lexueshmëri */
 }
 #social-container {
@@ -202,7 +202,7 @@ section{
 
 /* Ikonat me filter të lehtë blu për t'u dalluar */
 .icon {
-    filter: drop-shadow(0 2px 8px #00eaff);
+    filter: drop-shadow(0 2px 8px #e0bcda);
 }
 
 /*Buttons*/
@@ -218,13 +218,13 @@ section{
     width: 8rem;
     border-radius: 2rem;
     color: #fff;
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #00eaff;
+    background: rgba(7, 7, 7, 0.7);
+    border: 1px solid #103033;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 .btn-color-1,
 .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;    
+    border: rgb(10, 10, 10) 0.1rem solid;    
 }
 .btn-color-1:hover,
 .btn-color-2:hover {
@@ -286,9 +286,9 @@ section{
 .details-container,
 .color-container,
 .contact-info-upper-container {
-    background: rgba(0,0,0,0.5);
+    background: rgba(161, 167, 164, 0.5);
     border-radius: 2rem;
-    border: 1px solid #00eaff;
+    border: 1px solid #284b50;
     color: #fff;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
@@ -310,8 +310,8 @@ section{
     position: relative;
 }
 .experience-sub-title {
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    color: #02140a;
+    text-shadow: 0 2px 8px rgba(24, 65, 42, 0.7);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -358,7 +358,7 @@ article .icon {
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 .project-btn {
-    color: #ffd54f; /* E verdhë për titujt e projekteve */
+    color: #0a0a0a; /* E verdhë për titujt e projekteve */
     border-color: rgb(163, 163, 163);
 }
 
