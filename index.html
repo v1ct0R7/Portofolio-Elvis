@@ -1,307 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elvis Murati | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <nav id="desktop-nav">
-       <div class="logo">Check about Elvis</div>
-       <div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>  
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#find me">Find me</a></li>     
-        </ul>
-       </div>
-       </nav>
-       <nav id="hamburger-nav">
-        <div class="logo">Check about Elvis</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                    <li><a href="#find me" onclick="toggleMenu()">Find me</a></li>
-            </div>
+    <header class="site-header">
+        <div class="brand-block">
+            <span class="brand-tag">Portfolio</span>
+            <h1>Elvis Murati</h1>
         </div>
-       </nav>
-       <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/pic.jpeg" alt="Elvis Murati Profile Picture"/>
-        </div>  
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm </p>
-            <h1 class="title">Elvis Murati</h1>
-            <p  class="section__text__p2">Front-end developer</p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
-                onclick="window.open('./assets/CV-Elvis-Murati.pdf')">Download CV
-            </button>
-                <button 
-                class="btn btn-color-1" 
-                onclick="location.href = './#contact'">
-                Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="My LinkedIn Profile"
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/in/elvis-murati-735b40157'"
-                />
-                <img 
-                src="./assets/github.png" 
-                alt="My GitHub Profile"
-                class="icon"
-                onclick="location.href='https://www.github.com/v1ct0R7'"
-                />
-            </div>
-        </div>
-       </section>
-       <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.jpg" 
-                alt="Profile picture"
-                class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png"
-                        alt="Experience icon"
-                        class="icon"/>
-                        <h3>Experience</h3>
-                        <p>1+ years <br /> Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                        src="./assets/education.png"
-                        alt="Education icon"
-                        class="icon"/>
-                        <h3>Education</h3>
-                        <p>B.Sc Bachelors Degree <br />Computer Engineering</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Motivated junior front-end developer with practical experience building responsive websites
-using HTML, CSS, and JavaScript. I care about clean UI, smooth user experience, and getting
-the details right. I’m looking for a team where I can keep improving my skills and contribute to
-real, useful projects.
-
-</p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
-        onclick="location.href='./#experience'"/>
-       </section>
-       <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                <h2 class="experience-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>Database</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    
-                </div>
-            </div>
-             <div class="details-container">
-                <h2 class="experience-sub-title">Other Technical Skills</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>Python</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>Github</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>React.js</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets//checkmark.png" 
-                        alt="Experience Icon" 
-                        class="icon"/>
-                        <div>
-                            <h3>Git</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
-        onclick="location.href='./#projects'"/>
-       </section>
-       <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p> 
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-1.png"
-                    alt="Project 1"
-                    class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Project One Coming Soon</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/v1ct0R7'">Github
-                </button>
-                <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/v1ct0R7'">Live Demo
-                </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-2.png"
-                    alt="Project 2"
-                    class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two Coming Soon</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/v1ct0R7'">Github
-                </button>
-                <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/v1ct0R7'">Live Demo
-                </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.png"
-                    alt="Project 3"
-                    class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three Coming Soon</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/v1ct0R7'">Github
-                </button>
-                <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/v1ct0R7'">Live Demo
-                </button>
-                </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
-        onclick="location.href='./#projects'"/>
-       </section>
-       <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png"
-                alt="Email Icon" 
-                class="icon contact-icon email-icon"/>
-                <p><a href="mailto:elvismurati15@gmail.com">
-                    elvismurati15@gmail.com</a></p>
-            </div>
-             <div class="contact-info-container">
-                <img src="./assets/linkedin.png"
-                alt="LinkedIn Icon" 
-                class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/elvis-murati-735b40157">
-                    LinkedIn Profile</a></p>
-            </div>
-        </div>
-       </section>
-       <selection id="find me">
-        <p class="section__text__p1">Click on links</p>
-        <h1 class="title">Web links below (comming soon)</h1>
-        </div>
-       </selection>
-       <footer>
-        <nav>
-           <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#find me">Find me</a></li>
-                </ul>
-            </div>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <p>Copyright &#169; 2025 Elvis Murati. All rights reserved.</p>
-       </footer>
+        <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#work" onclick="toggleMenu()">Work</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Full-stack Developer</p>
+                <h2>Studio-quality portfolio websites with a bold dark interface.</h2>
+                <p class="hero-text">
+                    I design premium digital experiences, blending modern typography, clean systems, and rich interaction for brands and creators.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="window.open('./assets/CV-Elvis-Murati.pdf')">Download CV</button>
+                    <button class="btn btn-secondary" onclick="location.href='#contact'">Contact Me</button>
+                </div>
+                <div class="hero-meta">
+                    <span>2024 Student Team</span>
+                    <span>Freelance & UI/UX</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="visual-frame">
+                        <img src="./assets/pic.jpeg" alt="Elvis Murati" />
+                    </div>
+                    <div class="hero-badge">Full-stack Dev</div>
+                </div>
+                <div class="visual-preview">
+                    <div class="preview-screen">
+                        <div class="preview-top"></div>
+                        <img src="./assets/about-pic.jpg" alt="App preview" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-panel" id="about">
+            <div class="section-head">
+                <span class="section-label">TAPOGRAPHY</span>
+                <h2>How I build modern portfolio systems.</h2>
+            </div>
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>Project purpose</h3>
+                    <p>
+                        This portfolio design highlights refined spacing, layered gradients, and clear content blocks to tell a story of design, development, and polished visual direction.
+                    </p>
+                </article>
+                <article class="info-card accent-card">
+                    <h3>Brand direction</h3>
+                    <p>
+                        Dark surfaces, subtle glow details, and premium typography create a professional interface for showcasing credentials and work.
+                    </p>
+                </article>
+                <article class="info-card">
+                    <h3>Visual system</h3>
+                    <p>
+                        Minimal color, soft shadows, and refined cards help the content stand out while preserving a bold, cinematic atmosphere.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline" id="work">
+            <div class="section-head">
+                <span class="section-label">Journey</span>
+                <h2>Professional experience and learning path.</h2>
+            </div>
+            <div class="timeline-grid">
+                <article class="timeline-card">
+                    <span class="timeline-year">2023</span>
+                    <h3>Frontend Developer</h3>
+                    <p>Built responsive web interfaces with clean markup, polished CSS, and interactive JavaScript.</p>
+                </article>
+                <article class="timeline-card">
+                    <span class="timeline-year">2024</span>
+                    <h3>UI/UX Designer</h3>
+                    <p>Designed modern portfolio layouts, mobile-first experiences, and brand-focused visuals.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="section-head">
+                <span class="section-label">Services</span>
+                <h2>What I deliver for digital brands.</h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Web Design</h3>
+                    <p>Modern websites with strong visual hierarchy and responsive layout.</p>
+                </article>
+                <article class="service-card">
+                    <h3>UI/UX Systems</h3>
+                    <p>Carefully designed interfaces that are easy to use and visually engaging.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Brand Integration</h3>
+                    <p>Clean identity and polished presentation for portfolio and product pages.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-head">
+                <span class="section-label">Projects</span>
+                <h2>Recent work and case studies.</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="./assets/project-1.png" alt="Project 1" />
+                    <div>
+                        <h3>Creative Portfolio</h3>
+                        <p>Responsive showcase with elegant dark styling and strong visual balance.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="./assets/project-2.png" alt="Project 2" />
+                    <div>
+                        <h3>Mobile-first UI</h3>
+                        <p>Clear interface, strong contrast, and consistent brand messaging.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="./assets/project-3.png" alt="Project 3" />
+                    <div>
+                        <h3>Web App Concept</h3>
+                        <p>Minimal layout with attention to detail, typography, and spacing.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-head">
+                <span class="section-label">Contact</span>
+                <h2>Let’s build something together.</h2>
+            </div>
+            <div class="contact-panel">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <a href="mailto:elvismurati15@gmail.com">elvismurati15@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/elvis-murati-735b40157" target="_blank">linkedin.com/in/elvis-murati-735b40157</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>© 2024 Elvis Murati. Designed for portfolio presentation.</div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
