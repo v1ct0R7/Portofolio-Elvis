@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
+    <div class="page-glow"></div>
+
     <header class="site-header">
-        <div class="brand-block">
-            <span class="brand-tag">Portfolio</span>
-            <h1>Elvis Murati</h1>
+        <div class="brand-container">
+            <div class="brand-logo"><img src="personal.logo.png" alt="Elvis Murati" width="60"/></div>
         </div>
+
         <nav class="main-nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+
+        <a class="btn btn-ghost header-cta" href="#contact">Light Up the Talk</a>
+
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
@@ -31,162 +34,464 @@
     <div class="mobile-menu" id="mobile-menu">
         <a href="#home" onclick="toggleMenu()">Home</a>
         <a href="#about" onclick="toggleMenu()">About</a>
-        <a href="#work" onclick="toggleMenu()">Work</a>
-        <a href="#services" onclick="toggleMenu()">Services</a>
         <a href="#projects" onclick="toggleMenu()">Projects</a>
         <a href="#contact" onclick="toggleMenu()">Contact</a>
     </div>
 
     <main>
-        <section class="hero" id="home">
-            <div class="hero-copy">
-                <p class="eyebrow">Full-stack Developer</p>
-                <h2>Studio-quality portfolio websites with a bold dark interface.</h2>
-                <p class="hero-text">
-                    I design premium digital experiences, blending modern typography, clean systems, and rich interaction for brands and creators.
-                </p>
-                <div class="hero-actions">
-                    <button class="btn btn-primary" onclick="window.open('./assets/CV-Elvis-Murati.pdf')">Download CV</button>
-                    <button class="btn btn-secondary" onclick="location.href='#contact'">Contact Me</button>
-                </div>
-                <div class="hero-meta">
-                    <span>2024 Student Team</span>
-                    <span>Freelance & UI/UX</span>
+        <section class="hero-section" id="home">
+            <div class="hero-side-label">
+                <div class="hero-label-text">DEVELOPER
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="visual-card">
-                    <div class="visual-frame">
-                        <img src="./assets/pic.jpeg" alt="Elvis Murati" />
+
+            <div class="hero-center">
+                <div class="hero-image-frame">
+                    <img src="./assets/pic.jpeg" alt="Elvis Murati" />
+                </div>
+                <div class="hero-badge">
+                    <p>I have worked with over <strong>12 full projects.</strong></p>
+                </div>
+                <a class="btn btn-primary hero-portfolio-btn" href="#projects">Portfolio</a>
+            </div>
+
+            <div class="hero-right">
+                <h1 class="hero-name">ELVIS<br>MURATI</h1>
+                <p class="hero-description">My goal is to write clean, maintainable code that enhances the development process and makes coding enjoyable through structured and thoughtful practices.</p>
+                <div class="social-panel">
+                    <a class="social-icon" href="https://github.com/v1ct0R7" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="10"/></svg>
+                    </a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/elvis-murati-735b40157/" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="10"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-intro">
+                <span class="section-label">About</span>
+                <h2>Hello! I’m Elvis Murati, a full-stack developer with nearly 20 years of experience in building scalable applications. I specialize in Angular, Ionic, PHP (CodeIgniter), and Node.js. Committed to continuous learning, I prioritize success and customer satisfaction. Explore my portfolio for innovative solutions. Let’s create something amazing!</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-details">
+                    <div class="detail-row"><span>Name</span><span>Elvis Murati</span></div>
+                    <div class="detail-row"><span>Nationality</span><span>Albanian</span></div>
+                    <div class="detail-row"><span>Phone</span><span>(+355) 692345678</span></div>
+                    <div class="detail-row"><span>Experience</span><span>20+ Years</span></div>
+                    <div class="detail-row"><span>Freelance</span><span>Available</span></div>
+                    <div class="detail-row"><span>Language</span><span>English / Albanian</span></div>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <h4>Tech Stack</h4>
+                        <p>HTML, CSS, JavaScript, TypeScript, Angular, Ionic, Express, Node.js, MongoDB, MySQL, PHP, CodeIgniter</p>
                     </div>
-                    <div class="hero-badge">Full-stack Dev</div>
-                </div>
-                <div class="visual-preview">
-                    <div class="preview-screen">
-                        <div class="preview-top"></div>
-                        <img src="./assets/about-pic.jpg" alt="App preview" />
+                    <div class="skill-card">
+                        <h4>Front-End Side</h4>
+                        <p>HTML, CSS, JavaScript, TypeScript, Angular, Ionic, Express, CodeIgniter</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Back-End Side</h4>
+                        <p>PHP, CodeIgniter, JavaScript, Node.js, Express, MySQL, MongoDB, Linux, Apache, Nginx, Docker, Git, RESTful API</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>UI & Styling</h4>
+                        <p>HTML, CSS, Sass, jQuery, Bootstrap, Tailwind CSS, Material-UI, Media queries, Flexbox, Grid, Animations</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Database</h4>
+                        <p>MySQL, PostgreSQL, MongoDB, SQL, Sequelize, Mongoose, Schema design, indexing, normalization, ER modeling</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>RestAPI / APIs</h4>
+                        <p>API Design, Documentation, Express.js, CodeIgniter, JWT, OAuth, Postman, Swagger, CORS, HTTPS integration</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="info-panel" id="about">
-            <div class="section-head">
-                <span class="section-label">TAPOGRAPHY</span>
-                <h2>How I build modern portfolio systems.</h2>
+        <section class="work-section" id="work">
+            <div class="work-header">
+                <h2>Work</h2>
             </div>
-            <div class="info-grid">
-                <article class="info-card">
-                    <h3>Project purpose</h3>
-                    <p>
-                        This portfolio design highlights refined spacing, layered gradients, and clear content blocks to tell a story of design, development, and polished visual direction.
-                    </p>
+            <div class="work-timeline">
+                <div class="work-entry">
+                    <div class="work-date">July 2022 - Dec 2023</div>
+                    <div class="work-duration">1 Year & 5 Months</div>
+                    <div class="work-company">TECH RATIONAL.</div>
+                    <div class="work-subtitle">Codesinger (Gujarat)</div>
+                    <div class="work-position">Sr. Software Developer (Full Stack Developer)</div>
+                    <div class="work-skills">Ionic, Framework, Cordova/Capacitor, HTML/CSS, JavaScript, TypeScript, Angular, Redux, Ngrx, TypeScript, Angular, Redux, Ngrx, TypeScript, Angular, Redux, Ngrx, TypeScript, Angular, Redux, Ngrx, TypeScript, Angular, Redux, Ngrx, TypeScript, Angular, Redux, Ngrx</div>
+                    <div class="work-projects">
+                        <div class="project-item">Live Web & Mobile App Projects:</div>
+                        <ul>
+                            <li>iPhone: Community Mobile App</li>
+                            <li>Tably.Touch: Food Delivery Mobile App</li>
+                            <li>Hysus Mobile: Mobile App</li>
+                            <li>Strawberry Creative: Workout Web Application</li>
+                            <li>Your Gym: Sales Channel App</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-entry">
+                    <div class="work-date">2020 - June 2022</div>
+                    <div class="work-duration">2 Years & 6 Months</div>
+                    <div class="work-company">WEBAPP TECHNOLOGY.</div>
+                    <div class="work-subtitle">Hospially Labs (India)</div>
+                    <div class="work-position">Sr. Software Analyst & Developer</div>
+                    <div class="work-skills">Angular, TypeScript, Node.js, Express, Python, MySQL, MongoDB, Docker</div>
+                    <div class="work-projects">
+                        <div class="project-item">Live Web & Mobile App Projects:</div>
+                        <ul>
+                            <li>Crinaceous: Auto Call Recording Mobile App</li>
+                            <li>SMShway: SMS Gateway Web Application</li>
+                            <li>SchoolMas: Common Admission Web Application</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-entry">
+                    <div class="work-date">March 2019 - Dec 2020</div>
+                    <div class="work-duration">1 Year & 9 Months</div>
+                    <div class="work-company">TRINITY INFOCOM.</div>
+                    <div class="work-subtitle"> (Gujarat)</div>
+                    <div class="work-position">MEAN / LAMP Stacks Developer</div>
+                    <div class="work-skills">Angular, TypeScript, Node.js, Express.js, MongoDB, MySQL, Postman, GIGSQL</div>
+                    <div class="work-projects">
+                        <div class="project-item">Live Web & Mobile App Projects:</div>
+                        <ul>
+                            <li>MyTrade: Indices Info Web Application</li>
+                            <li>Codelk: Booking Web Application</li>
+                            <li>Xanfur: Entry Pass Web Application</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey-section" id="journey">
+            <div class="journey-header">
+                <h2>Journey</h2>
+            </div>
+            <p class="journey-intro">
+                With over two decades in software development, I've evolved from a Windows Application Developer to mastering LAMP/MEAN stacks and Ionic for mobile apps. I excel in front and back-end development with CodeIgniter, Angular, Ionic, and Node.js. My expertise includes project leadership, technical strategy, and agile methodologies. Dedicated to innovative solutions, I deliver results that drive business success.
+            </p>
+            <div class="journey-cards">
+                <article class="journey-card-large">
+                    <h3>2018</h3>
+                    <h4>[Sr. Fullstack & Mobile App Developer (Ionic)]</h4>
+                    <p>With expertise in mobile and PHP development, I create cross-platform mobile and web applications, focusing on available solutions and intuitive UIs. My work includes designing secure platforms, mobile and web applications, achieving high performance applications that meet client needs and exceed expectations.</p>
                 </article>
-                <article class="info-card accent-card">
-                    <h3>Brand direction</h3>
-                    <p>
-                        Dark surfaces, subtle glow details, and premium typography create a professional interface for showcasing credentials and work.
-                    </p>
-                </article>
-                <article class="info-card">
-                    <h3>Visual system</h3>
-                    <p>
-                        Minimal color, soft shadows, and refined cards help the content stand out while preserving a bold, cinematic atmosphere.
-                    </p>
+                <article class="journey-card-large">
+                    <h3>2004</h3>
+                    <h4>[Windows Application Developer]</h4>
+                    <p>As a Windows Application Developer, I specialize in VB.Net and C#, creating intuitive UIs with development tools, including cutting-edge testing, and deployment strategies, ensuring code quality and supporting the displayed applications.</p>
                 </article>
             </div>
         </section>
 
-        <section class="timeline" id="work">
-            <div class="section-head">
-                <span class="section-label">Journey</span>
-                <h2>Professional experience and learning path.</h2>
-            </div>
-            <div class="timeline-grid">
-                <article class="timeline-card">
-                    <span class="timeline-year">2023</span>
-                    <h3>Frontend Developer</h3>
-                    <p>Built responsive web interfaces with clean markup, polished CSS, and interactive JavaScript.</p>
-                </article>
-                <article class="timeline-card">
-                    <span class="timeline-year">2024</span>
-                    <h3>UI/UX Designer</h3>
-                    <p>Designed modern portfolio layouts, mobile-first experiences, and brand-focused visuals.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="services" id="services">
-            <div class="section-head">
+        <section class="services-section" id="services">
+            <div class="services-header">
                 <span class="section-label">Services</span>
-                <h2>What I deliver for digital brands.</h2>
+                <h2>Craft Unforgettable and Impactful</h2>
+                <h2>Websites, Web Applications, and Mobile Apps</h2>
+                <h2>Awesome Digital Branding, Design, and Development</h2>
             </div>
             <div class="services-grid">
                 <article class="service-card">
-                    <h3>Web Design</h3>
-                    <p>Modern websites with strong visual hierarchy and responsive layout.</p>
+                    <div class="service-image">
+                        <img src="./assets/mobile-app.jpg" alt="Mobile App Development" />
+                    </div>
+                    <h3>MOBILE APP DEVELOPMENT</h3>
+                    <p>With extensive experience in mobile app development, we boost productivity and enhance your app with extensible design and intuitive interactions tailored for Apple iOS and Android Studio.</p>
+                    <div class="service-tags">
+                        <span>React</span>
+                        <span>Angular</span>
+                        <span>Cross-platform</span>
+                        <span>Android Studio</span>
+                        <span>Xcode</span>
+                        <span>Native APIs / Plugins</span>
+                    </div>
                 </article>
                 <article class="service-card">
-                    <h3>UI/UX Systems</h3>
-                    <p>Carefully designed interfaces that are easy to use and visually engaging.</p>
+                    <div class="service-image">
+                        <img src="./assets/design-solutions.jpg" alt="Design Solutions" />
+                    </div>
+                    <h3>SOLID DESIGN SOLUTIONS</h3>
+                    <p>Focused on a user-centered approach, we boost productivity and revenue. Our team's remarkable expertise and ability to continuously exceed your expectations.</p>
+                    <div class="service-tags">
+                        <span>Figma</span>
+                        <span>Adobe AfterEffects</span>
+                        <span>Adobe Illustrator</span>
+                        <span>Blender</span>
+                        <span>Cinema 4D</span>
+                        <span>Animations</span>
+                    </div>
                 </article>
                 <article class="service-card">
-                    <h3>Brand Integration</h3>
-                    <p>Clean identity and polished presentation for portfolio and product pages.</p>
+                    <div class="service-image">
+                        <img src="./assets/web-development.jpg" alt="Web Development" />
+                    </div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Adaptive web design components use well-structured, readable code for better development solutions and optimized for performance and user experience.</p>
+                    <div class="service-tags">
+                        <span>Node</span>
+                        <span>Angular</span>
+                        <span>PHP/GIS</span>
+                        <span>NodeJS</span>
+                        <span>CodeIgniter</span>
+                        <span>WordPress</span>
+                        <span>Framework</span>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section class="projects" id="projects">
-            <div class="section-head">
-                <span class="section-label">Projects</span>
-                <h2>Recent work and case studies.</h2>
+        <section class="integration-section" id="integration">
+            <div class="integration-header">
+                <h2>Integration</h2>
+                <p class="integration-subtitle">Striving to create innovative applications.</p>
             </div>
-            <div class="project-grid">
-                <article class="project-card">
-                    <img src="./assets/project-1.png" alt="Project 1" />
-                    <div>
-                        <h3>Creative Portfolio</h3>
-                        <p>Responsive showcase with elegant dark styling and strong visual balance.</p>
+            <div class="integration-container">
+                <div class="integration-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">+332</div>
+                        <p>Successfully completed a total of 332+ projects</p>
                     </div>
-                </article>
-                <article class="project-card">
-                    <img src="./assets/project-2.png" alt="Project 2" />
-                    <div>
-                        <h3>Mobile-first UI</h3>
-                        <p>Clear interface, strong contrast, and consistent brand messaging.</p>
+                    <div class="stat-card">
+                        <div class="stat-number">100K</div>
+                        <p>Revenue from the clients & their users</p>
                     </div>
-                </article>
-                <article class="project-card">
-                    <img src="./assets/project-3.png" alt="Project 3" />
-                    <div>
-                        <h3>Web App Concept</h3>
-                        <p>Minimal layout with attention to detail, typography, and spacing.</p>
+                    <div class="stat-card">
+                        <div class="stat-number">+20</div>
+                        <p>Years of Experience</p>
                     </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="section-head">
-                <span class="section-label">Contact</span>
-                <h2>Let’s build something together.</h2>
-            </div>
-            <div class="contact-panel">
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <a href="mailto:elvismurati15@gmail.com">elvismurati15@gmail.com</a>
+                    <div class="stat-card">
+                        <div class="stat-number">+25</div>
+                        <p>I have worked with  10</p>
+                    </div>
                 </div>
-                <div class="contact-card">
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/elvis-murati-735b40157" target="_blank">linkedin.com/in/elvis-murati-735b40157</a>
+                <div class="integration-description">
+                    <p>A solid product development strategy involves clear objectives, thorough research, robust data analysis, actionable insights, and innovation. Maturity in organization, consistent branding, rigorous testing of quality, and market demands drive sustainable growth.</p>
+                </div>
+            </div>
+            <div class="integration-wheel-container">
+                <div class="integration-wheel">
+                    <div class="wheel-item">
+                        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40"/></svg>
+                        <span>Design</span>
+                    </div>
+                    <div class="wheel-item">
+                        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40"/></svg>
+                        <span>Code</span>
+                    </div>
+                    <div class="wheel-item">
+                        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40"/></svg>
+                        <span>Brand</span>
+                    </div>
+                    <div class="wheel-item">
+                        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40"/></svg>
+                        <span>Motion</span>
+                    </div>
+                    <div class="wheel-item">
+                        <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40"/></svg>
+                        <span>UI</span>
+                    </div>
+                </div>
+                <div class="wheel-center-text">
+                    <div>Productivity</div>
+                    <div>Insights</div>
+                    <div>Strategy</div>
+                    <div>Growth</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <div class="projects-header">
+                <span class="section-label">Projects</span>
+                <h2>User-centered Development Approach Enhances</h2>
+                <h2>Productivity and Drives Revenue Growth</h2>
+                <p class="projects-subtitle"><em>Smart Development</em> Elevating a business to stand out is both an art and a science. The approach is marked by a serious commitment to excellence and a creative flair. Their user-centered design philosophy not only enhances productivity but also drives revenue growth. They craft bespoke designs tailored to diverse clients across various industries, from innovative startups to established corporations.</p>
+            </div>
+
+            <div class="projects-carousel">
+                <div class="carousel-item">
+                    <img src="./assets/project-carousel-1.png" alt="Web Application" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/project-carousel-2.png" alt="Mobile App" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/project-carousel-3.png" alt="Mobile Application" />
+                </div>
+            </div>
+
+            <div class="featured-project">
+                <div class="featured-project-content">
+                    <h3>FoodChe PWA Web & Mobile Application</h3>
+                    <p>Food Delivery Web & Mobile Application with an Admin Panel and Driver/Delivery App will provide a comprehensive platform for food delivery services. By offering a seamless user experience, efficient management tools, and secure backend infrastructure.</p>
+                    <div class="project-tags">
+                        <span>Food Delivery App</span>
+                        <span>Progressive Web Application</span>
+                        <span>Mobile App</span>
+                        <span>NodeJS Backend</span>
+                        <span>Admin Panel</span>
+                        <span>Delivery App</span>
+                        <span>Customer Satisfaction</span>
+                        <span>Operational Efficiency</span>
+                        <span>Scalability</span>
+                        <span>Secure Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <div class="testimonials-header">
+                <h2>Testimonials and Recognitions</h2>
+                <p>I'm proud to be recognized for my innovative solutions by prestigious firms and clients. Here's what they have to say and some of the accolades I've received</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <img src="./assets/cert-1.png" alt="Certificate 1" />
+                    <h4>Certificate Recognition</h4>
+                </article>
+                <article class="testimonial-card">
+                    <img src="./assets/cert-2.png" alt="Certificate 2" />
+                    <h4>Professional Certification</h4>
+                </article>
+                <article class="testimonial-card">
+                    <img src="./assets/cert-3.png" alt="Certificate 3" />
+                    <h4>Achievement Award</h4>
+                </article>
+            </div>
+
+            <div class="recognition-features">
+                <div class="recognition-feature">
+                    <h4>Quality</h4>
+                    <p>Over 20 Clients & Multiple Software Design Developments, Technical Support & Services Award - Honoring exceptional achievement in Multimedia Design & Development and exemplary quality client support.</p>
+                </div>
+                <div class="recognition-feature">
+                    <h4>Satisfaction</h4>
+                    <p>Exceptional SMS support for Bank and Dairy software and successful development of MindCom Software, focusing on Dairy software and successful development and quality assurance. Committed to excellence.</p>
+                </div>
+                <div class="recognition-feature">
+                    <h4>Responsiveness</h4>
+                    <p>Successfully delivering 52 software projects, including AMPIC, CrudSoap, Farmalso, Accounting software, Recognizing agile project delivery. Unwaivering commitment to excellence.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="buddyse-section" id="partners">
+            <div class="buddyse-header">
+                <h2>Buddyse</h2>
+            </div>
+            <p class="buddyse-intro">At Buddyse, our talented team of over 25 experts crafts, develops, and delivers impactful custom software, web, and mobile applications. We excel in exceptional design and development, cutting-edge digital branding, and strategic marketing solutions. All thoughtfully tailored to meet the distinctive needs of startups, SMEs, and large enterprises.</p>
+            
+            <div class="buddyse-container">
+                <div class="buddyse-label">
+                    <span>Custom Backend Backend</span>
+                </div>
+                <div class="buddyse-services">
+                    <div class="service-item">
+                        <h4>Application Migration & Re-Engineering</h4>
+                        <p>We migrate and re-engineer applications to ensure scalability, sustainability, and performance. Our process includes assessing the current state, defining a migration strategy, and executing the transformation to best practices technology.</p>
+                    </div>
+                    <div class="service-item">
+                        <h4>Client-server Application Development</h4>
+                        <p>Our skilled developers create reliable client-server applications to ensure seamless communication, robust data exchange, secure transactions, and optimal performance, providing a secure backend infrastructure for users.</p>
+                    </div>
+                    <div class="service-item">
+                        <h4>Product Development Service</h4>
+                        <p>From concept to launch, we support your product development journey. We collaborate with clients to understand their vision, define requirements, and design applications for market-ready solutions.</p>
+                    </div>
+                    <div class="service-item">
+                        <h4>On-premise Application Development</h4>
+                        <p>We develop tailored solutions delivered on your business needs, offering complete control over data and infrastructure while ensuring compliance with industry standards.</p>
+                    </div>
+                    <div class="service-item">
+                        <h4>Enterprise Application Development</h4>
+                        <p>We develop robust and scalable enterprise applications tailored for large organizations. Our solutions streamline processes, enhance collaboration, and boost productivity ensuring seamless operations and growth.</p>
+                    </div>
+                    <div class="service-item">
+                        <h4>Maintenance and Support</h4>
+                        <p>We provide maintenance and support services to keep your applications running smoothly, including updates, bug fixes, performance enhancements, and technical assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-logo">
+                        <div class="logo-placeholder">ELVIS MURATI</div>
+                    </div>
+                    <h2>I am eager to connect with you and hear your thoughts.</h2>
+                    <p>I welcome you to connect for potential collaborations or just a friendly chat. Let's create something amazing together!</p>
+                    <a class="btn btn-primary" href="mailto:elvismurati15@gmail.com">Light Up the Talk</a>
+                </div>
+                
+                <div class="contact-right">
+                    <div class="contact-info">
+                        <h3>Contact us</h3>
+                        <div class="info-item">
+                            <strong>Email :</strong>
+                            <a href="mailto:elvismurati15@gmail.com">elvismurati15@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone :</strong>
+                            <span>+355686472220</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Address :</strong>
+                            <span>Rruga Todi Shkurti, 107, Tirana, Albania, 1001</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-links">
+                        <h3>Links</h3>
+                        <div class="links-grid">
+                            <a href="#services">Mobile App Development</a>
+                            <a href="#services">Solid Design Solutions</a>
+                            <a href="#services">Web Development</a>
+                            <a href="#about">About Us</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Contact</a>
+                            <a href="#home">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-footer">
+                <p>Don't like the forms? Drop us a line via email.</p>
+                <div class="footer-email">elvismurati15@gmail.com</div>
+                <div class="social-links">
+                    <a href="#">github</a>
+                    <span>|</span>
+                    <a href="#">dribbble</a>
+                    <span>|</span>
+                    <a href="#">behance</a>
+                    <span>|</span>
+                    <a href="#">fiverr</a>
+                    <span>|</span>
+                    <a href="#">linkedin</a>
+                    <span>|</span>
+                    <a href="#">instagram</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div>© 2024 Elvis Murati. Designed for portfolio presentation.</div>
+    <footer class="footer-section">
+        <div class="footer-thanks">Thank you for watching</div>
+        <div class="footer-meta">UI/UX Developer • Elvis Murati</div>
     </footer>
 
     <script src="script.js"></script>

@@ -1,6 +1,66 @@
-/* Mobile menu state is handled by the script and the main stylesheet. */
+﻿/* Media queries and mobile adaptation */
 .mobile-menu.open {
     display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .work-entry {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .journey-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .integration-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-carousel {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .recognition-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .buddyse-container {
+        grid-template-columns: 1fr;
+    }
+
+    .buddyse-label {
+        writing-mode: horizontal-tb;
+        text-orientation: initial;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-right {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid,
+    .journey-body,
+    .services-grid,
+    .project-feature,
+    .about-content {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -12,8 +72,73 @@
         display: none;
     }
 
-    .nav-toggle {
+    .menu-toggle {
         display: flex;
+    }
+
+    .social-panel {
+        position: static;
+        right: auto;
+        margin-top: 1.25rem;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .integration-section {
+        padding: 2rem;
+    }
+
+    .integration-wheel {
+        width: 280px;
+        height: 280px;
+    }
+
+    .services-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .projects-carousel {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-item {
+        height: 220px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recognition-features {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .testimonials-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .buddyse-section {
+        padding: 2rem;
+    }
+
+    .buddyse-services {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 2rem;
+    }
+
+    .contact-left h2 {
+        font-size: 1.6rem;
     }
 }
 
@@ -29,5 +154,99 @@
     .hero-actions {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .integration-wheel-container {
+        justify-content: center;
+    }
+
+    .integration-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .services-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .service-image {
+        height: 180px;
+    }
+
+    .integration-section {
+        padding: 1.5rem;
+    }
+
+    .integration-wheel {
+        width: 240px;
+        height: 240px;
+    }
+
+    .carousel-item {
+        height: 180px;
+    }
+
+    .featured-project {
+        padding: 1.5rem;
+    }
+
+    .featured-project-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .project-tags span {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .projects-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .testimonials-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-card img {
+        height: 240px;
+    }
+
+    .buddyse-section {
+        padding: 1.5rem;
+    }
+
+    .buddyse-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .buddyse-services {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 1.5rem;
+    }
+
+    .contact-left h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-left p {
+        font-size: 0.85rem;
+    }
+
+    .contact-right {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        gap: 0.5rem;
+    }
+
+    .social-links span {
+        display: none;
+    }
+
+    .links-grid {
+        gap: 0.6rem;
     }
 }
