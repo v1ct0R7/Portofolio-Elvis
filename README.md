@@ -22,12 +22,3 @@ Për të verifikuar versionin e prodhimit:
 npm run build
 npm run preview
 ```
-
-## Publikimi në Vercel
-
-1. Ngarko repository-n në GitHub dhe zgjidh **Add New → Project** në Vercel.
-2. Importo repository-n dhe vendos **Root Directory** në `ElvisProtofolio`.
-3. Zgjidh **Vite**; përdor `npm run build` si Build Command dhe `dist` si Output Directory.
-4. Kliko **Deploy**. Nuk nevojiten variabla mjedisi.
-
-Pas publikimit, çdo push në branch-in e lidhur e përditëson faqen automatikisht.
