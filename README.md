@@ -2,6 +2,8 @@
 
 Portofol personal i zhvilluar me React dhe Vite. Prezanton profilin, aftësitë, projektet, përvojën dhe mënyrat e kontaktit.
 
+[Shiko portofolin live](https://portofolio-elvis.vercel.app/)
+
 ![Pamja e portofolit](ElvisProtofolio/public/images/portfolio-preview.png)
 
 ## Nisja lokale
