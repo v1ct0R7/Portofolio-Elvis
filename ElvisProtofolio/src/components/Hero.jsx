@@ -5,7 +5,7 @@ function Hero() {
         <p className="eyebrow"><span className="status-dot" /> Available for opportunities</p>
         <h1>Full-stack developer building useful digital products.</h1>
         <p className="hero-description">
-          I’m Elvis, a software developer with 20+ years of experience across
+          I’m Elvis, a software developer with 6+ years of experience across
           web and mobile applications.
         </p>
         <div className="hero-actions">

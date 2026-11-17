@@ -11,7 +11,18 @@ function Skills() {
           description="A practical toolkit built over years of shipping software."
         />
         <div className="skills-list">
-          {skills.map((skill) => <span className="skill-tag" key={skill}>{skill}</span>)}
+          {skills.flatMap((skillGroups) =>
+            Object.entries(skillGroups).map(([category, categorySkills]) => (
+              <div className="skill-group" key={category}>
+                <h3 className="skill-group-title">{category}</h3>
+                <div className="skill-group-tags">
+                  {categorySkills.map((skill) => (
+                    <span className="skill-tag" key={skill}>{skill}</span>
+                  ))}
+                </div>
+              </div>
+            )),
+          )}
         </div>
       </div>
     </section>

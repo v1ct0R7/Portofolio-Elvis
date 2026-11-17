@@ -31,6 +31,7 @@ function Header() {
         <a href="#skills" onClick={closeMenu}>Skills</a>
         <a href="#projects" onClick={closeMenu}>Projects</a>
         <a href="#experience" onClick={closeMenu}>Experience</a>
+        <a href="#certifications" onClick={closeMenu}>Education</a>
         <a className="nav-contact" href="#contact" onClick={closeMenu}>Contact</a>
       </nav>
     </header>

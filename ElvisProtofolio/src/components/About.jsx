@@ -4,7 +4,10 @@ function About() {
   return (
     <section className="about section-block" id="about">
       <div className="page-width about-layout">
-        <SectionHeading eyebrow="A little about me" title="Experience that turns ideas into working products." />
+        <SectionHeading
+          eyebrow="A little about me"
+          title="Experience that turns ideas into working products."
+        />
         <div className="about-copy">
           <p>
             I build web and mobile applications from idea to release. I enjoy
@@ -12,10 +15,13 @@ function About() {
             that is easy to maintain.
           </p>
           <p>
-            My background spans frontend, backend and mobile development,
-            with a focus on Angular, Ionic, Node.js and PHP.
+            I have experience building web applications, working on both
+            frontend and backend development, with a focus on creating clean and
+            user-friendly solutions.
           </p>
-          <a className="text-link" href="#experience">See my experience <span aria-hidden="true">→</span></a>
+          <a className="text-link" href="#experience">
+            See my experience <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>
