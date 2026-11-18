@@ -1,3 +1,4 @@
+import { Link } from "../router.jsx";
 function Hero() {
   return (
     <section className="hero page-width" id="home">
@@ -9,7 +10,7 @@ function Hero() {
           web and mobile applications.
         </p>
         <div className="hero-actions">
-          <a className="button button-primary" href="#projects">View my work <span aria-hidden="true">↗</span></a>
+          <Link className="button button-primary" to="/projects">View my work <span aria-hidden="true">↗</span></Link>
           <a className="button button-secondary" href="/files/CV-Elvis-Murati.pdf" target="_blank" rel="noreferrer">Download CV</a>
         </div>
         <div className="hero-links" aria-label="Social profiles">

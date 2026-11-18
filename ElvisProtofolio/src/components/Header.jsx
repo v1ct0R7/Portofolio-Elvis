@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "../router.jsx";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -6,10 +7,10 @@ function Header() {
 
   return (
     <header className="site-header">
-      <a className="brand" href="#home" onClick={closeMenu} aria-label="Elvis Murati, home">
+      <Link className="brand" to="/#home" onClick={closeMenu} aria-label="Elvis Murati, home">
         <img src="/images/personal.logo.png" alt="" width="42" height="42" />
         <span>Elvis Murati</span>
-      </a>
+      </Link>
       <button
         className="menu-toggle"
         type="button"
@@ -27,12 +28,12 @@ function Header() {
         id="primary-navigation"
         aria-label="Main navigation"
       >
-        <a href="#about" onClick={closeMenu}>About</a>
-        <a href="#skills" onClick={closeMenu}>Skills</a>
-        <a href="#projects" onClick={closeMenu}>Projects</a>
-        <a href="#experience" onClick={closeMenu}>Experience</a>
-        <a href="#certifications" onClick={closeMenu}>Education</a>
-        <a className="nav-contact" href="#contact" onClick={closeMenu}>Contact</a>
+        <Link to="/#about" onClick={closeMenu}>About</Link>
+        <Link to="/#skills" onClick={closeMenu}>Skills</Link>
+        <Link to="/projects" onClick={closeMenu}>Projects</Link>
+        <Link to="/#experience" onClick={closeMenu}>Experience</Link>
+        <Link to="/#certifications" onClick={closeMenu}>Education</Link>
+        <Link className="nav-contact" to="/#contact" onClick={closeMenu}>Contact</Link>
       </nav>
     </header>
   );
