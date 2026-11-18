@@ -977,8 +977,29 @@ h3 {
   transition: border-color 160ms ease, transform 160ms ease;
 }
 
-.contact-intro .contact-email {
+.contact-email-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
   margin-top: 34px;
+}
+
+.contact-copy {
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--page);
+  color: inherit;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 160ms ease;
+}
+
+.contact-copy:hover {
+  border-color: #c4d99a;
 }
 
 .contact-email:hover {
@@ -1380,7 +1401,7 @@ h3 {
     padding: 30px 22px;
   }
 
-  .contact-intro .contact-email {
+  .contact-email-row {
     margin-top: 24px;
   }
 
